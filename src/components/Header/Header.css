@@ -1,0 +1,66 @@
+@import "../../tokens.css";
+
+.wrapper {
+    background-image: url(../../assets/images/headerBackground.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+}
+
+.wrapperCover {
+    background-color: #4A48118C;
+    width: 100%;
+    height: 100%;
+}
+
+.headerWrapper {
+    font-family: Nunito, sans-serif;
+    font-size: 18px;
+    color: var(--color-main);
+    border-bottom: 1px solid var(--color-main);
+}
+
+.headerWrapper ul {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.headerWrapper ul li {
+    margin: 0 15px;
+}
+
+.headerWrapper ul li a {
+    color: var(--color-main);
+}
+
+.headerContentWrapper {
+    height: calc(100% - 65px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerContentWrapper h1 {
+    font-size: 70px;
+    color: var(--color-secondary);
+    font-family: KoskoBold, sans-serif;
+}
+
+.headerContentWrapper h3 {
+    font-size: 30px;
+    color: var(--color-main);
+    font-family: Nunito, sans-serif;
+}
+
+.headerContentWrapper a {
+    color: var(--text-regular);
+    background-color: var(--color-secondary);
+    width: 500px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 50px;
+}
