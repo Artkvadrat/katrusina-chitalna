@@ -55,6 +55,8 @@
 }
 
 .headerContentWrapper a {
+    font-size: 18px;
+    font-family: Nunito, sans-serif;
     color: var(--text-regular);
     background-color: var(--color-secondary);
     width: 500px;
