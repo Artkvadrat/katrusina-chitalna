@@ -1,0 +1,104 @@
+.aboutAuthorWrapper {
+    background-image: url("../../assets/images/aboutAuthorBackground.jpeg");
+    background-size: cover;
+}
+
+.aboutAuthorWrapper .wrapperCover {
+    background-color: rgba(256, 256, 256, 0.8);
+    padding-top: 100px;
+}
+
+.aboutAuthorWrapper h3 {
+    font-family: KoskoBold, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: var(--color-orange);
+    position: relative;
+}
+
+.aboutAuthorWrapper h3:before,
+.aboutAuthorWrapper h3:after {
+    content: "";
+    width: calc(100dvw / 2 - 200px);
+    height: 1px;
+    background-color: var(--color-orange);
+    position: absolute;
+    top: 50%;
+}
+
+.aboutAuthorWrapper h3:before {
+    left: 0;
+}
+
+.aboutAuthorWrapper h3:after {
+    right: 0;
+}
+
+.aboutAuthorBlock {
+    margin: 20px auto 20px auto;
+    width: 80%;
+    display: flex;
+    border: 1px solid var(--color-orange);
+    border-radius: 30px;
+}
+
+.aboutAuthorBlock img {
+    width: 45%;
+    border-right: 1px solid var(--color-orange);
+    border-radius: 30px;
+}
+
+.aboutAuthorText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+
+.aboutAuthorText p:nth-child(1) {
+    font-size: 40px;
+    font-family: KoskoBold, sans-serif;
+    color: var(--color-orange);
+}
+
+.aboutAuthorText p:nth-child(2) {
+    font-family: Nunito, sans-serif;
+    color: var(--color-dark-green);
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+.aboutAuthorText p:nth-child(2) span {
+    color: var(--color-orange);
+    font-family: KoskoBold, sans-serif;
+}
+
+.aboutAuthorText p:nth-child(3),
+.aboutAuthorText p:nth-child(4){
+    margin-top: 15px;
+    color: var(--color-dark-green);
+    font-family: Nunito, sans-serif;
+}
+
+.aboutAuthorText p:nth-child(3) a {
+    color: var(--color-dark-green);
+    text-decoration: underline;
+}
+
+.aboutAuthorText p:nth-child(3) a:visited {
+    color: var(--color-dark-green);
+}
+
+.aboutAuthorText .aboutAuthorReadMoreButton {
+    width: 120px;
+    font-family: Nunito, sans-serif;
+    color: #7F7F7F;
+    text-decoration: underline;
+    margin-top: 15px;
+}
+
+.aboutAuthorBottomImage {
+    margin: 80px 0;
+    width: 100%;
+    height: 180px;
+}

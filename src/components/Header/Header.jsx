@@ -8,7 +8,7 @@ export const Header = () => (
       <header className="headerWrapper">
         <ul>
           <li>
-            <a href="/">Про автора</a>
+            <a href="#about-author">Про автора</a>
           </li>
           <li>
             <a href="#history">Про книгу</a>

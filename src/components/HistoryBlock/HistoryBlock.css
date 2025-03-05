@@ -1,6 +1,6 @@
 .historyBlockWrapper {
     min-height: 800px;
-    background-color: var(--background);
+    background-color: var(--color-light-green);
     padding: 30px 0;
 }
 
@@ -8,7 +8,7 @@
     font-family: KoskoBold, sans-serif;
     font-size: 50px;
     text-align: center;
-    color: var(--color-main);
+    color: var(--color-light);
     position: relative;
 }
 
@@ -17,7 +17,7 @@
     content: "";
     width: calc(100dvw / 2 - 200px);
     height: 1px;
-    background-color: var(--color-main);
+    background-color: var(--color-light);
     position: absolute;
     top: 50%;
 }
@@ -28,4 +28,107 @@
 
 .historyBlockWrapper h3:after {
     right: 0;
+}
+
+.bookDescriptionWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.bookDescription {
+    position: relative;
+    margin-left: 100px;
+    margin-top: 100px;
+    padding: 60px 30px 30px 120px;
+    width: 62%;
+    height: auto;
+    border-radius: 20px;
+    border: 1px solid var(--color-dark-green);
+    background-color: var(--color-light);
+
+}
+
+.bookDescriptionWrapper img {
+    width: 324px;
+    height: auto;
+    border: 1px solid var(--color-yellow);
+    border-radius: 20px;
+    position: absolute;
+    top: -80px;
+    left: -280px;
+}
+
+.bookDescription .quotes {
+    position: absolute;
+    top: 20px;
+    left: 60px;
+    font-size: 100px;
+    font-family: Nunito, sans-serif;
+    color: var(--color-dark-green);
+}
+
+.bookDescription h4 {
+    color: var(--color-dark-green);
+    font-size: 40px;
+    line-height: 45px;
+    font-family: Nunito, sans-serif;
+}
+
+.bookDescription h5 {
+    display: block;
+    color: var(--color-dark-green);
+    font-size: 25px;
+    line-height: 33px;
+    font-family: Nunito, sans-serif;
+}
+
+.bookDescription h5 span {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.bookDescription .targetDate {
+    margin-top: 30px;
+    font-family: Nunito, sans-serif;
+    color: #494711;
+    font-size: 18px;
+}
+
+.bookDescription .preorderButton {
+    margin-top: 10px;
+    width: 100%;
+    background-color: var(--color-yellow);
+    height: 45px;
+    border-radius: 20px;
+    font-family: Nunito, sans-serif;
+}
+
+.bookDescription .bookDescriptionText p:first-child {
+    margin-top: 30px;
+}
+
+.bookDescription .bookDescriptionText {
+    font-family: Nunito, sans-serif;
+    color: var(--color-dark-green);
+    padding-right: 70px;
+    margin-top: 30px;
+}
+
+.bookDescription .bookDescriptionReadMoreButton {
+    font-family: Nunito, sans-serif;
+    color: #7F7F7F;
+    text-decoration: underline;
+    margin-top: 15px;
+}
+
+.bookDescription .reviewBlock {
+    color: #A1AC2B;
+    font-family: Nunito, sans-serif;
+    margin-top: 50px;
+}
+
+.bookDescription .reviewBlock a {
+    text-decoration: underline;
+    color: #A1AC2B;
 }
