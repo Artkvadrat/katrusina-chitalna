@@ -66,11 +66,11 @@ export const AboutAuthor = () => {
           </div>
         </div>
 
-        <img
-          src={aboutAuthorBottomImage}
-          className="aboutAuthorBottomImage"
-          alt="Bottom backhround"
-        />
+        {/*<img*/}
+        {/*  src={aboutAuthorBottomImage}*/}
+        {/*  className="aboutAuthorBottomImage"*/}
+        {/*  alt="Bottom backhround"*/}
+        {/*/>*/}
       </div>
     </div>
   );

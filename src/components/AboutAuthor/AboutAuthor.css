@@ -5,7 +5,7 @@
 
 .aboutAuthorWrapper .wrapperCover {
     background-color: rgba(256, 256, 256, 0.8);
-    padding-top: 100px;
+    padding-top: 30px;
 }
 
 .aboutAuthorWrapper h3 {
@@ -35,7 +35,7 @@
 }
 
 .aboutAuthorBlock {
-    margin: 20px auto 20px auto;
+    margin: 230px auto 20px auto;
     width: 80%;
     display: flex;
     border: 1px solid var(--color-orange);
@@ -44,7 +44,9 @@
 
 .aboutAuthorBlock img {
     width: 45%;
-    border-right: 1px solid var(--color-orange);
+    height: 400px;
+    margin: auto 0;
+    border: 1px solid var(--color-orange);
     border-radius: 30px;
 }
 
@@ -52,7 +54,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 30px;
+    padding: 50px 30px;
 }
 
 .aboutAuthorText p:nth-child(1) {
