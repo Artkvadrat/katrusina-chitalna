@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 import authorPhoto from "../../assets/images/authorPhoto.jpeg";
-import aboutAuthorBottomImage from "../../assets/images/aboutAuthorBottomImage.jpeg";
 
 import "./AboutAuthor.css";
 
@@ -65,12 +64,6 @@ export const AboutAuthor = () => {
             </button>
           </div>
         </div>
-
-        {/*<img*/}
-        {/*  src={aboutAuthorBottomImage}*/}
-        {/*  className="aboutAuthorBottomImage"*/}
-        {/*  alt="Bottom backhround"*/}
-        {/*/>*/}
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import "./App.css";
 import "./reset.css";
-import { AboutAuthor, Header, HistoryBlock } from "./components";
+import { AboutAuthor, Header, HistoryBlock, Footer } from "./components";
 
 function App() {
   return (
@@ -10,6 +10,8 @@ function App() {
       <HistoryBlock />
 
       <AboutAuthor />
+
+      <Footer />
     </>
   );
 }

@@ -38,10 +38,11 @@
 
 .bookDescription {
     position: relative;
-    margin-left: 100px;
+    margin-left: 280px;
     margin-top: 100px;
     padding: 60px 30px 30px 120px;
     width: 62%;
+    max-width: 900px;
     height: auto;
     border-radius: 20px;
     border: 1px solid var(--color-dark-green);
