@@ -1,8 +1,24 @@
 import React, { useState } from "react";
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
 
 import bookCover from "../../assets/images/bookCover.jpeg";
+import bookPage1 from "../../assets/images/bookPage-1.jpeg";
+import bookPage2 from "../../assets/images/bookPage-2.jpeg";
+import bookPage3 from "../../assets/images/bookPage-3.jpeg";
+import bookPage4 from "../../assets/images/bookPage-4.jpeg";
+import bookPage5 from "../../assets/images/bookPage-5.jpeg";
 
 import "./HistoryBlock.css";
+
+const sliderItems = [
+  { original: bookCover },
+  { original: bookPage1 },
+  { original: bookPage2 },
+  { original: bookPage3 },
+  { original: bookPage4 },
+  { original: bookPage5 },
+];
 
 export const HistoryBlock = () => {
   const [isReadMore, setIsReadMore] = useState(false);
@@ -16,7 +32,16 @@ export const HistoryBlock = () => {
       <h3>Історія книги</h3>
 
       <div className="bookDescriptionWrapper">
-        <img src={bookCover} alt="Book cover" />
+        <div className="bookDescriptionCarousel">
+          <ImageGallery
+            items={sliderItems}
+            showThumbnails={false}
+            showPlayButton={false}
+            showBullets={true}
+            additionalClass="bookDescriptionCarousel"
+          />
+        </div>
+
         <div className="bookDescription">
           <p className="quotes">“</p>
           <h4>Казка про зайчика Тьопу</h4>
