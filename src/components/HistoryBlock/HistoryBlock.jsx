@@ -16,9 +16,8 @@ export const HistoryBlock = () => {
       <h3>Історія книги</h3>
 
       <div className="bookDescriptionWrapper">
+        <img src={bookCover} alt="Book cover" />
         <div className="bookDescription">
-          <img src={bookCover} alt="Book cover" />
-
           <p className="quotes">“</p>
           <h4>Казка про зайчика Тьопу</h4>
           <h5>

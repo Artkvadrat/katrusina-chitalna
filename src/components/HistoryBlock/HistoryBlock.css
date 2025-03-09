@@ -34,16 +34,15 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-flow: row-reverse;
+    gap: 10px;
+    margin-top: 50px;
 }
 
 .bookDescription {
-    position: relative;
-    margin-left: 280px;
-    margin-top: 100px;
-    padding: 60px 30px 30px 120px;
-    width: 62%;
-    max-width: 900px;
-    height: auto;
+    padding: 60px 30px 30px 60px;
+    width: 50%;
+    max-width: 800px;
     border-radius: 20px;
     border: 1px solid var(--color-dark-green);
     background-color: var(--color-light);
@@ -51,13 +50,11 @@
 }
 
 .bookDescriptionWrapper img {
-    width: 324px;
-    height: auto;
+    width: auto;
+    max-height: 600px;
     border: 1px solid var(--color-yellow);
     border-radius: 20px;
-    position: absolute;
-    top: -80px;
-    left: -280px;
+    margin: auto 0;
 }
 
 .bookDescription .quotes {
