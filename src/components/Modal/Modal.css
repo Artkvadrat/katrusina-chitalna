@@ -1,0 +1,29 @@
+.modalWrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContentWrapper {
+    background-color: var(--color-light);
+    padding: 35px 15px 15px 15px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.modalCloseIcon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.modalCloseIcon img {
+    width: 25px;
+}

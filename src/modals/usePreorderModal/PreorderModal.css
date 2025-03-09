@@ -1,0 +1,25 @@
+.preorderWrapper {
+    width: 450px;
+}
+
+.preorderForm {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-family: Nunito, sans-serif;
+    color: var(--color-dark-green);
+    font-size: 18px;
+}
+
+.preorderForm input {
+    border: 1px solid var(--color-dark-green);
+}
+
+.preorderForm input[type='radio'] {
+    margin-right: 15px;
+}
+
+.privacyLabel span {
+    text-decoration: underline;
+    cursor: pointer;
+}

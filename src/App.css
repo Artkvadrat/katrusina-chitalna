@@ -7,3 +7,7 @@
   font-family: "KoskoBold";
   src: url("./assets/fonts/KoskoBold-Bold.ttf");
 }
+
+.openModal {
+  overflow-y: hidden;
+}

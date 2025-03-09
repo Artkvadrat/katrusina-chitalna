@@ -1,0 +1,27 @@
+.privacyWrapper {
+    width: 700px;
+    height: 600px;
+    overflow-y: scroll;
+    font-family: Nunito, sans-serif;
+    color: var(--color-dark-green);
+    font-size: 18px;
+    white-space: break-spaces;
+}
+
+
+
+.privacyWrapper p {
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.privacyWrapper p:not(:first-child) {
+    margin-top: 15px;
+}
+
+.privacyWrapper pre {
+    white-space: pre-wrap;
+    font-family: Nunito, sans-serif;
+}

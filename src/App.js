@@ -2,7 +2,7 @@ import "./App.css";
 import "./reset.css";
 import { AboutAuthor, Header, HistoryBlock, Footer } from "./components";
 
-function App() {
+const App = () => {
   return (
     <>
       <Header />
@@ -14,6 +14,6 @@ function App() {
       <Footer />
     </>
   );
-}
+};
 
 export default App;
