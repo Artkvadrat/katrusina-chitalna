@@ -1,0 +1,30 @@
+.errorEmailWrapper {
+    padding: 60px 50px;
+    text-align: center;
+    width: 400px;
+    font-family: Nunito, sans-serif;
+    color: var(--color-dark-green);
+    line-height: 22px;
+}
+
+.errorEmailWrapper img {
+    height: 120px;
+    margin-bottom: 15px;
+}
+
+.errorEmailWrapper p:first-of-type {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.errorEmailWrapper p:last-of-type {
+
+}
+
+.errorEmailWrapper p:last-of-type a {
+    text-decoration: underline;
+}
+
+.errorEmailWrapper p:last-of-type a:visited {
+    color: var(--color-dark-green);
+}

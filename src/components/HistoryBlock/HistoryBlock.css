@@ -85,15 +85,6 @@
 
 }
 
-.bookDescription .quotes {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    font-size: 100px;
-    font-family: Nunito, sans-serif;
-    color: var(--color-dark-green);
-}
-
 .bookDescription h4 {
     color: var(--color-dark-green);
     font-size: 40px;

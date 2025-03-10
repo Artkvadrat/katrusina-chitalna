@@ -48,7 +48,6 @@ export const HistoryBlock = () => {
           </div>
 
           <div className="bookDescription">
-            <p className="quotes">“</p>
             <h4>Казка про зайчика Тьопу</h4>
             <h5>
               525 <span>грн</span>
@@ -65,7 +64,6 @@ export const HistoryBlock = () => {
               займатися тільки тим, що йому до вподоби: гуляти з друзями, бігати
               й стрибати в лісі, їсти багато цукерок і не слухатися мами. Але це
               зовсім не те, чого б хотіла його мама Зайчиха.
-              <br />
               <br />
             </p>
             {isReadMore && (
