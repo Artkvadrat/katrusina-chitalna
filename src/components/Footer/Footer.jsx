@@ -1,13 +1,39 @@
 import React from "react";
 
+import {
+  usePreorderModal,
+  usePrivacyModal,
+  useDeliveryModal,
+  useInformationMessage,
+} from "../../modals";
+import gmailIcon from "../../assets/icons/gmail.png";
+import instagramIcon from "../../assets/icons/instagram.png";
+import telegramIcon from "../../assets/icons/telegram.png";
+
 import "./Footer.css";
-import { usePreorderModal, usePrivacyModal } from "../../modals";
+import { Tooltip } from "../Tooltip";
 
 export const Footer = () => {
   const { component: preorderModal, onOpen: preorderModalOpen } =
     usePreorderModal();
   const { component: privacyModal, onOpen: onPrivacyModalOpen } =
     usePrivacyModal();
+  const { component: deliveryModal, onOpen: onDeliveryModalOpen } =
+    useDeliveryModal();
+  const { component: informationMessage, onShowing } = useInformationMessage();
+
+  const copyToClipboard = async () => {
+    try {
+      await navigator.clipboard
+        .writeText("katrusina.chitalna17@gmail.com")
+        .then(() => {
+          console.log("123");
+          onShowing("Пошта скопійована до буферу обміну");
+        });
+    } catch (error) {
+      console.error(error.message);
+    }
+  };
 
   return (
     <>
@@ -25,43 +51,29 @@ export const Footer = () => {
               </button>
 
               <div className="footerInfo">
-                <div>
-                  <p>
-                    Написати свої враження про книжку можна сюди:{" "}
-                    <a
-                      href="https://www.instagram.com/kateryna_hurtovaaa/?hl=uk"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Instagram
-                    </a>
-                  </p>
-                  <p>
-                    Написати листа мені можна сюди:{" "}
-                    <a href="mailto:katrusina.chitalna17@gmail.com">
-                      katrusina.chitalna17@gmail.com
-                    </a>
-                  </p>
-                  <p>
-                    <br />
-                    Після заповнення форми я звʼяжуся з вами в Телеграм
-                    <br />
-                    для уточнення усіх деталей по доставці та оплаті
-                  </p>
-                </div>
-                <div style={{ textAlign: "right" }}>
-                  <p>
-                    Доставка можлива по Україні та за кордон
-                    <br />
-                    за актуальними тарифами «Нової пошти»
-                  </p>
-                  <p>
-                    <br />
-                    Термін відправки 1-3 дні від очікуваної дати друку
-                    <br />
-                    (1 квітня 2025 року)
-                  </p>
-                </div>
+                <a
+                  href="https://www.instagram.com/kateryna_hurtovaaa/?hl=uk"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    src={instagramIcon}
+                    alt="Instagram icon"
+                    loading="lazy"
+                  />
+                </a>
+                <a
+                  href="https://t.me/kateryna_hurtovaaa"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={telegramIcon} alt="Telegram icon" loading="lazy" />
+                </a>
+                <Tooltip text="Скопіювати адресу">
+                  <button onClick={copyToClipboard}>
+                    <img src={gmailIcon} alt="Telegram icon" loading="lazy" />
+                  </button>
+                </Tooltip>
               </div>
             </div>
           </div>
@@ -89,7 +101,7 @@ export const Footer = () => {
                   </button>
                 </li>
                 <li>
-                  <a href="#contacts">Доставка</a>
+                  <button onClick={onDeliveryModalOpen}>Доставка</button>
                 </li>
               </ul>
             </div>
@@ -99,6 +111,8 @@ export const Footer = () => {
 
       {preorderModal}
       {privacyModal}
+      {deliveryModal}
+      {informationMessage}
     </>
   );
 };

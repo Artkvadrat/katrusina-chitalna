@@ -37,18 +37,11 @@
 
 .footerContentWrapper .footerInfo {
     display: flex;
-    justify-content: space-between;
-    color: var(--color-light);
-    font-family: Nunito, sans-serif;
+    gap: 20px;
 }
 
-.footerContentWrapper .footerInfo a {
-    color: var(--color-light);
-    text-decoration: underline;
-}
-
-.footerContentWrapper .footerInfo a:visited {
-    color: var(--color-light);
+.footerContentWrapper .footerInfo img {
+    width: 50px;
 }
 
 .footerBottomContentWrapper {
