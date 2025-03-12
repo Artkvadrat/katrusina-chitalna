@@ -28,3 +28,10 @@
 .errorEmailWrapper p:last-of-type a:visited {
     color: var(--color-dark-green);
 }
+
+@media screen and (max-width: 1000px) {
+    .errorEmailWrapper {
+        width: 100%;
+        padding: 20px;
+    }
+}

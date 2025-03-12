@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./Header.css";
+import { MobileHeader } from "./MobileHeader";
 
 export const Header = () => (
   <div className="wrapper">
@@ -19,9 +20,13 @@ export const Header = () => (
         </ul>
       </header>
 
+      <MobileHeader />
+
       <div className="headerContentWrapper">
-        <h1>Катрусина читальня</h1>
-        <h3>Простір, де живуть улюблені історії</h3>
+        <div>
+          <h1>Катрусина читальня</h1>
+          <h3>Простір, де живуть улюблені історії</h3>
+        </div>
 
         <a href="#history">Про книгу</a>
       </div>

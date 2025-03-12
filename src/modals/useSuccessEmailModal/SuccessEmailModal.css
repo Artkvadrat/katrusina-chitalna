@@ -6,3 +6,10 @@
     color: var(--color-dark-green);
     line-height: 22px;
 }
+
+@media screen and (max-width: 1000px) {
+    .successEmailWrapper {
+        width: 100%;
+        padding: 20px;
+    }
+}

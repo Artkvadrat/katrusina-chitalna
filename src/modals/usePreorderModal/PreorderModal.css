@@ -24,7 +24,7 @@
 
 
 .preorderForm > input {
-   border: 1px solid var(--color-light-green);
+    border: 1px solid var(--color-light-green);
     border-radius: 10px;
     height: 32px;
     padding-left: 15px;
@@ -53,4 +53,18 @@
 
 .preorderForm input[type='submit']:disabled {
     cursor: default;
+}
+
+@media screen and (max-width: 1000px) {
+    .preorderWrapper {
+        width: 100%;
+    }
+
+    .preorderForm {
+        font-size: 16px;
+    }
+
+    .preorderForm > label {
+        margin-top: 10px;
+    }
 }

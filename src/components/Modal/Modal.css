@@ -28,3 +28,17 @@
 .modalCloseIcon img {
     width: 30px;
 }
+
+@media screen and (max-width: 600px) {
+    .modalContentWrapper {
+        padding: 40px 10px 10px 10px;
+    }
+
+    .modalContentWrapper {
+        max-width: 93%;
+    }
+
+    .modalCloseIcon img {
+        width: 30px;
+    }
+}

@@ -106,3 +106,48 @@
     width: 100%;
     height: 180px;
 }
+
+@media screen and (max-width: 1000px) {
+    .aboutAuthorBlock {
+        width: 85%;
+        flex-direction: column;
+    }
+
+    .aboutAuthorBlock img {
+        width: 50%;
+        height: auto;
+        border: 1px solid var(--color-orange);
+        border-top: none;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .aboutAuthorWrapper h3 {
+        font-size: 28px;
+    }
+
+    .aboutAuthorWrapper h3:before,
+    .aboutAuthorWrapper h3:after {
+        width: calc(100dvw / 2 - 100px);
+    }
+
+    .aboutAuthorBlock img {
+        width: 100%;
+        border-left: none;
+        border-right: none;
+    }
+
+    .aboutAuthorText {
+        padding: 15px;
+    }
+
+    .aboutAuthorText p:nth-child(1) {
+        font-size: 20px;
+    }
+
+    .aboutAuthorText p:nth-child(2) {
+        margin-top: 15px;
+        font-size: 20px;
+    }
+}

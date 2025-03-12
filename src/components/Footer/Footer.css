@@ -73,3 +73,49 @@
 .footerBottomContent div ul li:not(:last-child) button {
     margin-right: 20px;
 }
+
+@media screen and (max-width: 1000px) {
+    .footerWrapper h3 {
+        font-size: 50px;
+    }
+
+    .footerContentWrapper {
+        padding-bottom: 15px;
+    }
+
+    .footerContentWrapper .preorderButton {
+        max-width: 500px;
+        width: 100%;
+        margin-bottom: 150px;
+    }
+
+    .footerBottomContent {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        gap: 15px;
+        padding: 15px 0;
+    }
+
+    .footerBottomContent ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footerBottomContent div ul li:not(:last-child) a,
+    .footerBottomContent div ul li:not(:last-child) button {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footerWrapper h3 {
+        padding-top: 50px;
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .footerContentWrapper .footerInfo img {
+        width: 30px;
+    }
+}

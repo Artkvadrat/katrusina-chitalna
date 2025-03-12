@@ -32,3 +32,13 @@
 .deliveryWrapper pre a:visited {
     color: var(--color-dark-green);
 }
+
+@media screen and (max-width: 1000px) {
+    .deliveryWrapper {
+        width: 100%;
+    }
+
+    .deliveryWrapper p {
+        font-size: 18px;
+    }
+}

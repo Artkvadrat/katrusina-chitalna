@@ -27,7 +27,6 @@ export const Footer = () => {
       await navigator.clipboard
         .writeText("katrusina.chitalna17@gmail.com")
         .then(() => {
-          console.log("123");
           onShowing("Пошта скопійована до буферу обміну");
         });
     } catch (error) {
