@@ -74,6 +74,20 @@
     margin-right: 20px;
 }
 
+.footerBottomAuthors {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    color: var(--color-light);
+    font-family: Nunito, sans-serif;
+    padding-bottom: 20px;
+}
+
+.footerBottomAuthors a,
+.footerBottomAuthors a:visited {
+    color: var(--color-light);
+}
+
 @media screen and (max-width: 1000px) {
     .footerWrapper h3 {
         font-size: 50px;
@@ -105,6 +119,13 @@
     .footerBottomContent div ul li:not(:last-child) a,
     .footerBottomContent div ul li:not(:last-child) button {
         margin-right: 0;
+    }
+
+    .footerBottomAuthors {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 12px;
     }
 }
 

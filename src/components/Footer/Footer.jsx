@@ -105,6 +105,29 @@ export const Footer = () => {
               </ul>
             </div>
           </div>
+          <div className="footerBottomAuthors">
+            <p>
+              Дизайн робила:{" "}
+              <a
+                href="https://www.instagram.com/_darialysenko?igsh=MWptY2J2Y3ZoYnpiMw%3D%3D"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Daria Lysenko
+              </a>
+              ;
+            </p>
+            <p>
+              Розробив сайт:{" "}
+              <a
+                href="https://www.linkedin.com/in/danylo-nabok"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Danylo Nabok
+              </a>
+            </p>
+          </div>
         </div>
       </footer>
 
