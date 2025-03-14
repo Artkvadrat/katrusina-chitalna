@@ -85,6 +85,14 @@ export const usePreorderModal = () => {
               disabled={isFormDisabled}
             />
 
+            <label>Коментар до замовлення</label>
+            <textarea
+              name="user_comment"
+              placeholder="Коментар"
+              disabled={isFormDisabled}
+              rows="2"
+            />
+
             <div>
               <input
                 type="radio"
