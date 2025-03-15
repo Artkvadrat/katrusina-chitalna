@@ -88,7 +88,7 @@ export const usePreorderModal = () => {
             <label>Коментар до замовлення</label>
             <textarea
               name="user_comment"
-              placeholder="Коментар"
+              placeholder="Введіть промокод або коментар до замовлення"
               disabled={isFormDisabled}
               rows="2"
             />
