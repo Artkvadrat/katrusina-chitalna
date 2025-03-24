@@ -37,7 +37,7 @@ export const Footer = () => {
   return (
     <>
       <footer>
-        <div className="footerWrapper" id="contacts">
+        <div className="footerWrapper">
           <div className="footerWrapperCover">
             <div className="footerContentWrapper">
               <h3>
@@ -49,7 +49,7 @@ export const Footer = () => {
                 Передзамовити
               </button>
 
-              <div className="footerInfo">
+              <div className="footerInfo" id="contacts">
                 <a
                   href="https://www.instagram.com/kateryna_hurtovaaa/?hl=uk"
                   target="_blank"
