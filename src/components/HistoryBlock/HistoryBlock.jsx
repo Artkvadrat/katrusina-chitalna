@@ -52,7 +52,7 @@ export const HistoryBlock = () => {
             <h5>
               525 <span>грн</span>
             </h5>
-            <p className="targetDate">Очікуємо з друку 1 квітня 2025</p>
+            <p className="targetDate">Очікуємо з друку 1 травня 2025</p>
 
             <button className="preorderButton" onClick={preorderModalOpen}>
               Передзамовити
