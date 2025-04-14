@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <title>Катрусина читальня</title>
+  <meta
+    name="description"
+    content="Простір, де живуть улюблені історії"
+  />
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Катрусина читальня">
+  <meta property="og:description"
+        content="Простір, де живуть улюблені історії">
+  <meta property="og:url" content="https://katrusina-chitalna.com.ua/">
+  <meta property="og:image" content="https://i.postimg.cc/0yN23RKS/image.png">
+  <meta property="og:image:alt" content="Катрусина читальня">
+  <meta property="og:site_name" content="Катрусина читальня">
+
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="stylesheet" href="styles/header.css" />
+  <link rel="stylesheet" href="styles/history.css" />
+  <link rel="stylesheet" href="styles/aboutAuthor.css" />
+  <link rel="stylesheet" href="styles/footer.css" />
+</head>
+<body>
+<div class="wrapper">
+  <div class="wrapperCover">
+    <header class="headerWrapper">
+      <ul>
+        <li>
+          <a href="#about-author">Про автора</a>
+        </li>
+        <li>
+          <a href="#history">Про книгу</a>
+        </li>
+        <li>
+          <a href="#contacts">Контакти</a>
+        </li>
+      </ul>
+    </header>
+
+
+    <div class="headerContentWrapper">
+      <div>
+        <h1>Катрусина читальня</h1>
+        <h3>Простір, де живуть улюблені історії</h3>
+      </div>
+
+      <a href="#history">Про книгу</a>
+    </div>
+  </div>
+</div>
+
+<div class="historyBlockWrapper" id="history">
+  <h3>Історія книги</h3>
+
+  <div class="bookDescriptionWrapper">
+    <div class="bookDescriptionCarousel">
+
+    </div>
+
+    <div class="bookDescription">
+      <h4>Казка про зайчика Тьопу</h4>
+      <h5>
+        525 <span>грн</span>
+      </h5>
+      <p class="targetDate">Очікуємо з друку 1 травня 2025</p>
+
+      <button class="preorderButton" onClick={preorderModalOpen}>
+        Передзамовити
+      </button>
+
+      <p class="bookDescriptionText">
+        Це добра й тепла історія про сім’ю, дружбу та дорослішання. На
+        початку ми знайомимося з Тьопою — зухвалим бешкетником, який хоче
+        займатися тільки тим, що йому до вподоби: гуляти з друзями, бігати
+        й стрибати в лісі, їсти багато цукерок і не слухатися мами. Але це
+        зовсім не те, чого б хотіла його мама Зайчиха.
+        <br />
+      </p>
+      <p class="bookDescriptionText">
+        І ось одного дня Тьопа приймає доросле рішення: «Я вже великий і
+        чудово впораюся без мами!». Тож він залишається вдома сам.
+        <br />
+        <br />
+        Чим завершиться ця історія? Чи вдасться Тьопі справді
+        подорослішати? Відповіді знайдете в цій казці.
+        <br />
+        <br />
+        Книжка містить три інтерактивні сторінки, які допоможуть малюку
+        ще глибше зануритися в пригоди вуханя Тьопи.
+      </p>
+
+
+      <button
+          class="bookDescriptionReadMoreButton"
+          onClick={toggleReadMore}
+      >
+        читати більше
+      </button>
+
+      <p class="reviewBlock">
+        *Казка для дітей віком від 3 до 6 років.
+        <br />
+        Має рецензію від дитячого психолога
+        <a
+            href="https://www.instagram.com/psiholog_alexandrovna/?hl=uk"
+            target="_blank"
+            rel="noreferrer"
+        >
+          Анни Грицькової
+        </a>
+        .
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="aboutAuthorWrapper" id="about-author">
+  <div class="wrapperCover">
+    <h3>Про автора</h3>
+
+    <div class="aboutAuthorBlock">
+      <img src="src/assets/images/authorPhoto.jpeg" alt="author" />
+      <div class="aboutAuthorText">
+        <p>Привіт!</p>
+        <p>
+          Я Катя Гуртова, і я рада вітати
+          <br />
+          тебе в <span>Катрусиній читальні!</span>
+        </p>
+        <p>
+          Я письменниця, копірайтерка та дуже творча СММниця.
+          <br />
+          <br />
+          “Казка про зайчика Тьопу” — це моє дитинство, спогади та любов,
+          збережені на 24-х сторінках маленької книжки. Ця історія належала
+          моїй бабусі Мусі Сергіївні Гуртовій, а я лише зібрала її,
+          намалювала зайців з ілюстраторкою
+          <a
+              href="https://www.instagram.com/zdor_katty/?hl=uk"
+              target="_blank"
+              rel="noreferrer"
+          >
+            Катею Здор
+          </a>
+          і показала світові.
+        </p>
+
+
+        <p>
+          Муся відкрила для мене світ казок та історій, в яких можливо
+          все, що тільки можна уявити. Одного дня я уявила, що можу
+          надрукувати “Тьопу”. І сьогодні сотні дітей по всій країні та
+          світу мають цю книжку в себе на поличці. Здається, Муся говорила
+          правду.
+          <br />
+          <br />Я надзвичайно люблю цю історію та вірю, що ваш малюк
+          полюбить її так само, і захоче перечитувати знову і знову.
+        </p>
+
+        <button
+            class="aboutAuthorReadMoreButton"
+            onClick={toggleReadMore}
+        >
+         читати більше
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footerWrapper">
+    <div class="footerWrapperCover">
+      <div class="footerContentWrapper">
+        <h3>
+          Зробіть передзамовлення
+          <br />
+          прямо зараз
+        </h3>
+        <button class="preorderButton" onClick={preorderModalOpen}>
+          Передзамовити
+        </button>
+
+        <div class="footerInfo" id="contacts">
+          <a
+              href="https://www.instagram.com/kateryna_hurtovaaa/?hl=uk"
+              target="_blank"
+              rel="noreferrer"
+          >
+            <img
+                src="src/assets/icons/instagram.png"
+                alt="Instagram icon"
+                loading="lazy"
+            />
+          </a>
+          <a
+              href="https://t.me/kateryna_hurtovaaa"
+              target="_blank"
+              rel="noreferrer"
+          >
+            <img src="src/assets/icons/telegram.png" alt="Telegram icon" loading="lazy" />
+          </a>
+          <Tooltip text="Скопіювати адресу">
+            <button onClick={copyToClipboard}>
+              <img src="src/assets/icons/gmail.png" alt="Gmail icon" loading="lazy" />
+            </button>
+          </Tooltip>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footerBottomContentWrapper">
+    <div class="footerBottomContent">
+      <div>
+        <ul>
+          <li>
+            <a href="#about-author">Про автора</a>
+          </li>
+          <li>
+            <a href="#history">Про книгу</a>
+          </li>
+          <li>
+            <a href="#contacts">Контакти</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <button onClick={onPrivacyModalOpen}>
+              Політика конфіденційності
+            </button>
+          </li>
+          <li>
+            <button onClick={onDeliveryModalOpen}>Доставка</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footerBottomAuthors">
+      <p>
+        Дизайн робила:
+        <a
+            href="https://www.instagram.com/_darialysenko?igsh=MWptY2J2Y3ZoYnpiMw%3D%3D"
+            target="_blank"
+            rel="noreferrer"
+        >
+          Daria Lysenko;
+        </a>
+      </p>
+      <p>
+        Розробив сайт:
+        <a
+            href="https://www.linkedin.com/in/danylo-nabok"
+            target="_blank"
+            rel="noreferrer"
+        >
+          Danylo Nabok
+        </a>
+      </p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
