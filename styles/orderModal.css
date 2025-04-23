@@ -8,7 +8,7 @@
     color: var(--color-dark-green);
 }
 
-.preorderForm {
+.orderForm {
     display: flex;
     flex-direction: column;
     font-family: Nunito, sans-serif;
@@ -16,24 +16,24 @@
     font-size: 18px;
 }
 
-.preorderForm > label {
+.orderForm > label {
     margin-top: 20px;
     margin-bottom: 8px;
     color: var(--color-dark-green);
 }
 
 
-.preorderForm > input {
+.orderForm > input {
     border: 1px solid var(--color-light-green);
     border-radius: 10px;
     height: 32px;
     padding-left: 15px;
 }
-.preorderForm input {
+.orderForm input {
     border: 1px solid var(--color-light-green);
 }
 
-.preorderForm textarea {
+.orderForm textarea {
     border: 1px solid var(--color-light-green);
     border-radius: 10px;
     height: 64px;
@@ -42,11 +42,11 @@
     resize: none;
 }
 
-.preorderForm > div {
+.orderForm > div {
     margin-top: 5px;
 }
 
-.preorderForm input[type='radio'] {
+.orderForm input[type='radio'] {
     margin-right: 15px;
 }
 
@@ -55,12 +55,12 @@
     cursor: pointer;
 }
 
-.preorderForm input[type='submit'] {
+.orderForm input[type='submit'] {
     margin-top: 30px;
     color: var(--color-dark-green);
 }
 
-.preorderForm input[type='submit']:disabled {
+.orderForm input[type='submit']:disabled {
     cursor: default;
 }
 
@@ -69,11 +69,11 @@
         width: 100%;
     }
 
-    .preorderForm {
+    .orderForm {
         font-size: 16px;
     }
 
-    .preorderForm > label {
+    .orderForm > label {
         margin-top: 10px;
     }
 }

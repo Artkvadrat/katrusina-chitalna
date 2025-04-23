@@ -1,13 +1,17 @@
 @font-face {
     font-family: "Nunito";
-    src: url("/src/assets/fonts/Nunito-Regular.ttf");
+    src: url("/assets/fonts/Nunito-Regular.ttf");
 }
 
 @font-face {
     font-family: "KoskoBold";
-    src: url("src/assets/fonts/KoskoBold-Bold.ttf");
+    src: url("../assets/fonts/KoskoBold-Bold.ttf");
 }
 
-.openModal {
-    overflow-y: hidden;
+.hide {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
 }

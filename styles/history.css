@@ -132,7 +132,7 @@
     margin-top: 30px;
 }
 
-.bookDescription .bookDescriptionReadMoreButton {
+.bookDescription #bookDescriptionReadMoreButton {
     font-family: Nunito, sans-serif;
     color: #7F7F7F;
     text-decoration: underline;

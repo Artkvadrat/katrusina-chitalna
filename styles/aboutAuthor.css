@@ -1,5 +1,5 @@
 .aboutAuthorWrapper {
-    background-image: url("/src/assets/images/aboutAuthorBackground.jpeg");
+    background-image: url("/assets/images/aboutAuthorBackground.jpeg");
     background-size: cover;
 }
 
@@ -93,7 +93,7 @@
     color: var(--color-dark-green);
 }
 
-.aboutAuthorText .aboutAuthorReadMoreButton {
+.aboutAuthorText #aboutAuthorReadMoreButton {
     width: 120px;
     font-family: Nunito, sans-serif;
     color: #7F7F7F;

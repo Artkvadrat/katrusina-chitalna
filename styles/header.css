@@ -1,7 +1,5 @@
-@import "../src/tokens.css";
-
 .wrapper {
-    background-image: url(../src/assets/images/headerBackground.jpeg);
+    background-image: url(../assets/images/headerBackground.jpeg);
     background-size: cover;
     background-position: center;
     height: 800px;
