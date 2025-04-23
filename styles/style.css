@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "Nunito";
+    src: url("/assets/fonts/Nunito-Regular.ttf");
+}
+
+@font-face {
+    font-family: "KoskoBold";
+    src: url("../assets/fonts/KoskoBold-Bold.ttf");
+}
+
+.hide {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}

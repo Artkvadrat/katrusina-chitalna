@@ -1,0 +1,163 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modalContentWrapper {
+    background-color: var(--color-light);
+    padding: 40px 25px 25px 25px;
+    border-radius: 20px;
+    border: 1px solid var(--color-dark-green);
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    z-index: 1001;
+}
+
+.modalCloseIcon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 2.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-dark-green);
+}
+
+@media screen and (max-width: 600px) {
+    .modalContentWrapper {
+        padding: 40px 10px 10px 10px;
+        max-width: 93%;
+    }
+
+    .modalCloseIcon img {
+        width: 30px;
+    }
+}
+
+.modalContent {
+    width: 700px;
+    height: 600px;
+    font-family: Nunito, sans-serif;
+    color: var(--color-dark-green);
+    font-size: 18px;
+    white-space: break-spaces;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    overflow-y: scroll;
+}
+
+.modalContent p {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.modalContent p:not(:first-child) {
+    margin-top: 15px;
+}
+
+.modalContent pre {
+    white-space: pre-wrap;
+    font-family: Nunito, sans-serif;
+}
+
+.modalContent pre a {
+    color: var(--color-dark-green);
+    text-decoration: underline;
+}
+
+.modalContent pre a:visited {
+    color: var(--color-dark-green);
+}
+
+@media screen and (max-width: 1000px) {
+    .modalContent {
+        width: 100%;
+    }
+
+    .modalContent p {
+        font-size: 18px;
+    }
+}
+
+.successEmailWrapper {
+    padding: 100px 50px;
+    text-align: center;
+    width: 400px;
+    font-family: Nunito, sans-serif;
+    color: var(--color-dark-green);
+    line-height: 22px;
+}
+
+@media screen and (max-width: 1000px) {
+    .successEmailWrapper {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+.errorEmailWrapper {
+    padding: 60px 50px;
+    text-align: center;
+    width: 400px;
+    font-family: Nunito, sans-serif;
+    color: var(--color-dark-green);
+    line-height: 22px;
+}
+
+.errorEmailWrapper img {
+    height: 120px;
+    margin-bottom: 15px;
+}
+
+.errorEmailWrapper p:first-of-type {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.errorEmailWrapper p:last-of-type {
+
+}
+
+.errorEmailWrapper p:last-of-type a {
+    text-decoration: underline;
+}
+
+.errorEmailWrapper p:last-of-type a:visited {
+    color: var(--color-dark-green);
+}
+
+.errorEmailWrapper a {
+    color: var(--color-dark-green);
+    text-decoration: underline;
+}
+
+.errorEmailWrapper a:visited {
+    color: var(--color-dark-green);
+}
+
+@media screen and (max-width: 1000px) {
+    .errorEmailWrapper {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+

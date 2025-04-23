@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="public/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="public/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="public/favicon-16x16.png">
+  <link rel="manifest" href="public/site.webmanifest">
+
+  <title>Катрусина читальня</title>
+  <meta
+    name="description"
+    content="Простір, де живуть улюблені історії"
+  />
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Катрусина читальня">
+  <meta property="og:description"
+        content="Простір, де живуть улюблені історії">
+  <meta property="og:url" content="https://katrusina-chitalna.com.ua/">
+  <meta property="og:image" content="https://i.postimg.cc/0yN23RKS/image.png">
+  <meta property="og:image:alt" content="Катрусина читальня">
+  <meta property="og:site_name" content="Катрусина читальня">
+
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/tokens.css" />
+  <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="stylesheet" href="styles/header.css" />
+  <link rel="stylesheet" href="styles/history.css" />
+  <link rel="stylesheet" href="styles/aboutAuthor.css" />
+  <link rel="stylesheet" href="styles/footer.css" />
+  <link rel="stylesheet" href="styles/carousel.css" />
+  <link rel="stylesheet" href="styles/modals.css" />
+  <link rel="stylesheet" href="styles/orderModal.css" />
+
+  <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>  <script>
+    (function(){
+      emailjs.init("tccT4-CbpBySBFtDq");
+    })();
+  </script>
+</head>
+<body>
+<div class="wrapper">
+  <div class="wrapperCover">
+    <header class="headerWrapper">
+      <ul>
+        <li>
+          <a href="#about-author">Про автора</a>
+        </li>
+        <li>
+          <a href="#history">Про книгу</a>
+        </li>
+        <li>
+          <a href="#contacts">Контакти</a>
+        </li>
+      </ul>
+    </header>
+
+
+    <div class="headerContentWrapper">
+      <div>
+        <h1>Катрусина читальня</h1>
+        <h3>Простір, де живуть улюблені історії</h3>
+      </div>
+
+      <a href="#history">Про книгу</a>
+    </div>
+  </div>
+</div>
+
+<div class="historyBlockWrapper" id="history">
+  <h3>Історія книги</h3>
+
+  <div class="bookDescriptionWrapper">
+    <div class="bookDescriptionCarousel">
+      <!-- Маленька версія -->
+      <div class="image-container" id="small-carousel">
+        <button class="arrow-btn arrow-left" onclick="changeSlide(-1)">←</button>
+        <img id="small-image" src="" alt="Фото" />
+        <button class="arrow-btn arrow-right" onclick="changeSlide(1)">→</button>
+        <button class="fullscreen-btn" onclick="openFullscreen()">⛶</button>
+      </div>
+
+      <!-- Повноекранна версія -->
+      <div id="fullscreen-carousel" class="carousel-fullscreen" style="display: none;">
+        <button class="close-btn" onclick="closeFullscreen()">×</button>
+        <button class="prev-full" onclick="changeSlide(-1)">←</button>
+        <img id="fullscreen-image" src="" alt="Фото" />
+        <button class="next-full" onclick="changeSlide(1)">→</button>
+      </div>
+    </div>
+
+    <div class="bookDescription">
+      <h4>Казка про зайчика Тьопу</h4>
+      <h5>
+        525 <span>грн</span>
+      </h5>
+
+      <button class="preorderButton" onClick={openModal('modal-order')}>
+        Замовити
+      </button>
+
+      <p class="bookDescriptionText">
+        Це добра й тепла історія про сім’ю, дружбу та дорослішання. На
+        початку ми знайомимося з Тьопою — зухвалим бешкетником, який хоче
+        займатися тільки тим, що йому до вподоби: гуляти з друзями, бігати
+        й стрибати в лісі, їсти багато цукерок і не слухатися мами. Але це
+        зовсім не те, чого б хотіла його мама Зайчиха.
+        <br />
+      </p>
+      <p class="bookDescriptionText hide">
+        І ось одного дня Тьопа приймає доросле рішення: «Я вже великий і
+        чудово впораюся без мами!». Тож він залишається вдома сам.
+        <br />
+        <br />
+        Чим завершиться ця історія? Чи вдасться Тьопі справді
+        подорослішати? Відповіді знайдете в цій казці.
+        <br />
+        <br />
+        Книжка містить три інтерактивні сторінки, які допоможуть малюку
+        ще глибше зануритися в пригоди вуханя Тьопи.
+      </p>
+
+
+      <button id="bookDescriptionReadMoreButton">
+        читати більше
+      </button>
+
+      <p class="reviewBlock">
+        *Казка для дітей віком від 3 до 6 років.
+        <br />
+        Має рецензію від дитячого психолога
+        <a
+            href="https://www.instagram.com/psiholog_alexandrovna/?hl=uk"
+            target="_blank"
+            rel="noreferrer"
+        >
+          Анни Грицькової
+        </a>
+        .
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="aboutAuthorWrapper" id="about-author">
+  <div class="wrapperCover">
+    <h3>Про автора</h3>
+
+    <div class="aboutAuthorBlock">
+      <img src="assets/images/authorPhoto.jpeg" alt="author" />
+      <div class="aboutAuthorText">
+        <p>Привіт!</p>
+        <p>
+          Я Катя Гуртова, і я рада вітати
+          <br />
+          тебе в <span>Катрусиній читальні!</span>
+        </p>
+        <p>
+          Я письменниця, копірайтерка та дуже творча СММниця.
+          <br />
+          <br />
+          “Казка про зайчика Тьопу” — це моє дитинство, спогади та любов,
+          збережені на 24-х сторінках маленької книжки. Ця історія належала
+          моїй бабусі Мусі Сергіївні Гуртовій, а я лише зібрала її,
+          намалювала зайців з ілюстраторкою
+          <a
+              href="https://www.instagram.com/zdor_katty/?hl=uk"
+              target="_blank"
+              rel="noreferrer"
+          >
+            Катею Здор
+          </a>
+          і показала світові.
+        </p>
+
+
+        <p class="hide" id="aboutAuthorReadMoreText">
+          Муся відкрила для мене світ казок та історій, в яких можливо
+          все, що тільки можна уявити. Одного дня я уявила, що можу
+          надрукувати “Тьопу”. І сьогодні сотні дітей по всій країні та
+          світу мають цю книжку в себе на поличці. Здається, Муся говорила
+          правду.
+          <br />
+          <br />Я надзвичайно люблю цю історію та вірю, що ваш малюк
+          полюбить її так само, і захоче перечитувати знову і знову.
+        </p>
+
+        <button id="aboutAuthorReadMoreButton">
+         читати більше
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footerWrapper">
+    <div class="footerWrapperCover">
+      <div class="footerContentWrapper">
+        <h3>
+          Зробіть замовлення
+          <br />
+          прямо зараз
+        </h3>
+        <button class="preorderButton" onClick={openModal('modal-order')}>
+          Замовити
+        </button>
+
+        <div class="footerInfo" id="contacts">
+          <a
+              href="https://www.instagram.com/kateryna_hurtovaaa/?hl=uk"
+              target="_blank"
+              rel="noreferrer"
+          >
+            <img
+                src="assets/icons/instagram.png"
+                alt="Instagram icon"
+                loading="lazy"
+            />
+          </a>
+          <a
+              href="https://t.me/kateryna_hurtovaaa"
+              target="_blank"
+              rel="noreferrer"
+          >
+            <img src="assets/icons/telegram.png" alt="Telegram icon" loading="lazy" />
+          </a>
+          <a
+              href="mailto:katrusina.chitalna17@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+          >
+            <img src="assets/icons/gmail.png" alt="Gmail icon" loading="lazy" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footerBottomContentWrapper">
+    <div class="footerBottomContent">
+      <div>
+        <ul>
+          <li>
+            <a href="#about-author">Про автора</a>
+          </li>
+          <li>
+            <a href="#history">Про книгу</a>
+          </li>
+          <li>
+            <a href="#contacts">Контакти</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <button onclick="openModal('modal-policy')">
+              Політика конфіденційності
+            </button>
+          </li>
+          <li>
+            <button onclick="openModal('modal-delivery')">Доставка</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footerBottomAuthors">
+      <p>
+        Дизайн робила:
+        <a
+            href="https://www.instagram.com/_darialysenko?igsh=MWptY2J2Y3ZoYnpiMw%3D%3D"
+            target="_blank"
+            rel="noreferrer"
+        >
+          Daria Lysenko;
+        </a>
+      </p>
+      <p>
+        Розробив сайт:
+        <a
+            href="https://www.linkedin.com/in/danylo-nabok"
+            target="_blank"
+            rel="noreferrer"
+        >
+          Danylo Nabok
+        </a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<div class="modal" id="modal-order">
+  <div class="modalContentWrapper">
+    <button class="modalCloseIcon" onclick="closeModal('modal-order')">×</button>
+
+    <div class="preorderWrapper">
+      <p>
+        Залиште свої контакти, і ми напишемо вам у Telegram/Viber протягом
+        30–60 хвилин, щоб обговорити всі деталі 🧡
+      </p>
+      <form onSubmit="sendEmail(); return false;" class="orderForm" id="orderForm">
+        <label for="user_name">Ім'я</label>
+        <input
+            type="text"
+            name="user_name"
+            id="user_name"
+            placeholder="Введіть ваше ім'я"
+            required
+        />
+
+        <label for="user_email">Email</label>
+        <input
+            type="email"
+            name="user_email"
+            id="user_email"
+            placeholder="Введіть вашу пошту"
+            required
+        />
+
+        <label for="user_phone">Номер телефону (Viber/Telegram)</label>
+        <input
+            type="tel"
+            name="user_phone"
+            id="user_phone"
+            placeholder="Введіть ваш номер телефону"
+            required
+        />
+
+        <label for="user_comment">Коментар до замовлення</label>
+        <textarea
+            name="user_comment"
+            id="user_comment"
+            placeholder="Введіть промокод або коментар до замовлення"
+            rows="2"
+        ></textarea>
+
+        <div>
+          <input
+              type="radio"
+              id="policyCheck"
+              name="policyCheck"
+              required
+          />
+          <label for="policyCheck" class="privacyLabel">
+            Я погоджуюсь з
+            <span onclick="openModal('modal-policy')">
+                  політикою конфіденційності
+                </span>
+          </label>
+        </div>
+
+        <input type="submit" value="Надіслати" />
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="modal-policy">
+  <div class="modalContentWrapper">
+    <button class="modalCloseIcon" onclick="closeModal('modal-policy')">×</button>
+
+    <div class="modalContent">
+      <p>Політика конфіденційності</p>
+      <p>1. Загальні положення</p>
+      <pre>З метою захисту персональних даних наших користувачів, інформуємо вас про те, які саме дані ми збираємо і яким чином їх використовуємо на сайті (https://katrusina-chitalna.com.ua) (далі – Сайт). Предмет Політики – порядок обробки персональних даних Користувачів сайту. Політика містить інформацію щодо порядку збору, зберігання, обробки та використання персональних даних користувачів Сайту. Будь ласка, уважно ознайомтеся з Політикою, перед використанням Сайту. Користуючись Сайтом, ви висловлюєте повну і беззастережну згоду з Політикою і зазначеними в ній умовами надання, збору, обробки ваших персональних даних. Відповідно до Закону України від 01 червня 2010 року No 2297-VI «Про захист персональних даних» (далі — «Закон») під персональними даними розуміють відомості чи сукупність відомостей про фізичну особу, яка ідентифікована або може бути конкретно ідентифікована.</pre>
+      <p>2. Перелік персональних даних, які ми збираємо</p>
+      <pre>Для надання Замовникам можливості користування Сайтом та замовлення Послуг, ми можемо збирати наступні персональні дані користувачів через Google Forms: <br/>● Імʼя<br/>● Контактні дані (адреса електронної пошти, номер телефону, імʼя користувача та (або) інші контактні дані).<br/>● Нік в телеграмі<br/>● Дані, які збираються Сайтом автоматично: файли cookie, технічна інформація про пристрій, з якого здійснюється користування Сайтом (зокрема, тип браузера, тип і модель пристрою, версія операційної системи), інформація про взаємодію користувача з Сайтом (зокрема, час доступу, адреса запитуваної сторінки), інформація про відвідування і використання Сайту; інформація, що міститься в будь-яких повідомленнях, які ви відправляєте нам по електронній пошті або через наш Сайт; будь-яка інша особиста інформація, яку ви вносите під час реєстрації на Сайті.</pre>
+      <p>3. Цілі опрацювання персональних даних</p>
+      <pre>Персональні дані, надані вами через сайт, можуть бути використані для цілей: адміністрування сайту; відправки повідомлень; запису на отримання Послуг Виконавця та надання доступу до матеріалів; забезпечення безпеки сайту і запобігання шахрайству; інших видів використання, зокрема в маркетингових цілях.</pre>
+      <p>4. Доступ до ваших персональних даних та його надання третім особам</p>
+      <pre>Надання доступу до персональної інформації третім особам, можливе лише за наступних обставин:<br/>● надання Замовником однозначної згоди на таку передачу;<br/>● необхідності укладення чи виконання правочину між Виконавцем та третьою особою на користь Замовника, у разі надання Замовником однозначної згоди на таку передачу;<br/>● у випадках запобігання злочину або завдання шкоди нам або третім особам;<br/>● у випадках передбачених чинним законодавством України.<br/>За винятком випадків, передбачених у цій Політиці, ми зобов’язуємося не надавати вашу особисту інформацію третім особам.</pre>
+      <p>5. Строк зберігання персональних даних</p>
+      <pre>Ми зберігаємо персональні дані лише протягом строку, який є необхідним для реалізації цілей, визначених у пункті 1 Політики. Обробка персональних даних відбувається у строк, не більший, ніж це необхідно відповідно до законного призначення та цілей, визначених цією Політикою. Ваша згода на опрацювання персональних даних діє протягом невизначеного строку.</pre>
+      <p>6. Права користувачів Сайту (Замовників) щодо належних їм персональних даних</p>
+      <pre>Всі користувачі Сайту (Замовники) мають наступні права, пов’язані з збиранням, зберіганням, обробкою та використанням їх персональних даних:<br/>● Знати про джерела збирання персональних даних, їх місцезнаходження, мету обробки персональних даних, місцезнаходження володільця чи розпорядника персональних даних.<br/>● Отримувати інформацію про те, чи обробляються їх персональні та які саме.<br/>● Вимагати припинити обробку персональних даних, змінити або знищити персональні дані, якщо ці дані є недостовірними.<br/>● Відкликати згоду на обробку персональних даних тощо.<br/>Для реалізації цих прав необхідно звернутися із письмовою заявою, на наступну електронну адресу: katrin.polovinko2918@gmail.com</pre>
+      <p>7. Безпека даних</p>
+      <pre>Для захисту ваших персональних даних вжито всіх необхідних заходів від несанкціонованого доступу, зміни, розкриття чи знищення із застосуванням відповідних технічних і організаційних інструментів.</pre>
+      <p>8. Зміни до умов Політики</p>
+      <pre>Політика конфіденційності може змінюватися. Зміни, що вносяться до Політики, публікуються на Сайті. Всі зміни набувають чинності з моменту їх публікації. Продовжуючи, використовувати Сайт, ви підтверджує згоду з новими умовами Політики у редакції, чинній на момент використання сайту.</pre>
+      <p>9. Контактна інформація</p>
+      <pre>Якщо у вас виникнуть будь-які запитання щодо нашої Політики, ви можете звернутись до нас за наступною електронною адресою: katrin.polovinko2918@gmail.com</pre>
+      <p>10. Згода користувачів</p>
+      <pre>Користуючись нашим сайтом, ви підтверджуєте, що ознайомлені з умовами цієї Політики і правами, наданими суб’єктам персональних даних згідно зі ст. 8 Закону України «Про захист персональних даних» та погоджуєтеся з викладеними умовами.</pre>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="modal-delivery">
+  <div class="modalContentWrapper">
+    <button class="modalCloseIcon" onclick="closeModal('modal-delivery')">×</button>
+
+    <div class="modalContent">
+      <p>Доставка по Україні</p>
+      <pre>● Клієнти з України можуть отримати замовлення протягом 1–4 робочих днів (залежно від вашого міста та обраного способу доставки).<br/>● Доставка здійснюється у населені пункти, де є відділення Нової Пошти або Укрпошти.<br/>● Точні терміни та вартість доставки ви зможете дізнатися після оформлення замовлення.<br/><br/>Будь ласка, перевіряйте замовлення при отриманні:<br/>● комплектацію,<br/>● цілісність упаковки,<br/>● відсутність механічних пошкоджень.<br/><br/>Це можна зробити безпосередньо у відділенні перевізника в присутності працівників служби доставки. Ми не несемо відповідальності за товар, якщо його не було перевірено під час отримання.<br/>Якщо товар пошкоджений, ви маєте право відмовитися від його отримання та не оплачувати.</pre>
+      <p>Міжнародна доставка від Nova Post</p>
+      <pre>Nova Post надає міжнародну експрес-доставку документів, посилок і вантажів в Україну та за кордон у найкоротші терміни.<br/>Детальна інформація про послуги та відстеження відправлень – на сайті <a href="https://novapost.com" target="_blank" rel="noreferrer">novapost.com.</a><br/><br/>Вартість доставки<br/>● Залежить від країни призначення, ваги, габаритів відправлення та обраних додаткових послуг.<br/>● Точну вартість можна дізнатися під час оформлення замовлення.<br/><br/>Важливо знати<br/>● Перевірте умови ввезення товарів у вашу країну перед оформленням замовлення (<a href="https://novapost.com" target="_blank" rel="noreferrer">novapost.com</a>).<br/>● Ми не несемо відповідальності за затримки на митниці або конфіскацію замовлень.<br/><br/>Додаткові витрати<br/>● Митні збори та ПДВ не включені у вартість доставки, оскільки вони залежать від країни призначення.<br/>● Якщо вартість замовлення перевищує 150 євро, додаються брокерські послуги, які оплачуються разом із доставкою під час оформлення замовлення.</pre>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="modal-success-email">
+  <div class="modalContentWrapper">
+    <button class="modalCloseIcon" onclick="closeModal('modal-success-email')">×</button>
+
+    <div class="successEmailWrapper">
+      <img src="./assets/icons/success.svg" alt="success email" />
+      <p>
+        Запит на передзамовлення успішно надіслано. Ми напишемо вам у
+        Telegram/Viber протягом 30–60 хвилин, щоб обговорити всі деталі 🧡
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal" id="modal-error-email">
+  <div class="modalContentWrapper">
+    <button class="modalCloseIcon" onclick="closeModal('modal-error-email')">×</button>
+
+    <div class="errorEmailWrapper">
+      <img src="./assets/icons/error.svg" alt="Error email" />
+      <p>Ой...</p>
+      <p>
+        Шось пішло не так і ваш запит на передзамовлення не надіслано.
+        Спробуйте будь ласка пізніше або напишіть нам
+        <a
+            href="https://t.me/kateryna_hurtovaaa"
+            target="_blank"
+            rel="noreferrer"
+        >сюди</a>.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript" src="scripts/textScript.js" async></script>
+<script type="text/javascript" src="scripts/carousel.js" async></script>
+<script type="text/javascript" src="scripts/modals.js" defer></script>
+<script type="text/javascript" src="scripts/sendEmail.js" defer></script>
+
+</body>
+</html>

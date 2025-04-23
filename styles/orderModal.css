@@ -1,0 +1,79 @@
+.preorderWrapper {
+    width: 450px;
+}
+
+.preorderWrapper > p {
+    margin-top: 15px;
+    font-family: Nunito, sans-serif;
+    color: var(--color-dark-green);
+}
+
+.orderForm {
+    display: flex;
+    flex-direction: column;
+    font-family: Nunito, sans-serif;
+    color: var(--color-dark-green);
+    font-size: 18px;
+}
+
+.orderForm > label {
+    margin-top: 20px;
+    margin-bottom: 8px;
+    color: var(--color-dark-green);
+}
+
+
+.orderForm > input {
+    border: 1px solid var(--color-light-green);
+    border-radius: 10px;
+    height: 32px;
+    padding-left: 15px;
+}
+.orderForm input {
+    border: 1px solid var(--color-light-green);
+}
+
+.orderForm textarea {
+    border: 1px solid var(--color-light-green);
+    border-radius: 10px;
+    height: 64px;
+    padding-left: 15px;
+    line-height: 32px;
+    resize: none;
+}
+
+.orderForm > div {
+    margin-top: 5px;
+}
+
+.orderForm input[type='radio'] {
+    margin-right: 15px;
+}
+
+.privacyLabel span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.orderForm input[type='submit'] {
+    margin-top: 30px;
+    color: var(--color-dark-green);
+}
+
+.orderForm input[type='submit']:disabled {
+    cursor: default;
+}
+
+@media screen and (max-width: 1000px) {
+    .preorderWrapper {
+        width: 100%;
+    }
+
+    .orderForm {
+        font-size: 16px;
+    }
+
+    .orderForm > label {
+        margin-top: 10px;
+    }
+}

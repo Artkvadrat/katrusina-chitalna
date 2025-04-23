@@ -1,0 +1,142 @@
+.footerWrapper {
+    background-image: url("/assets/images/footerBackground.jpeg");
+    background-size: cover;
+}
+
+.footerWrapperCover {
+    background-color: #4A48118C;
+    width: 100%;
+    height: 100%;
+}
+
+.footerContentWrapper {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.footerWrapper h3 {
+    display: block;
+    padding-top: 150px;
+    padding-bottom: 20px;
+    font-size: 70px;
+    font-family: KoskoBold, sans-serif;
+    color: var(--color-yellow);
+}
+
+.footerContentWrapper .preorderButton {
+    width: 500px;
+    height: 45px;
+    border-radius: 20px;
+    background-color: var(--color-yellow);
+    color: var(--color-dark-green);
+    font-family: Nunito, sans-serif;
+    margin-bottom: 200px;
+}
+
+.footerContentWrapper .footerInfo {
+    display: flex;
+    gap: 20px;
+}
+
+.footerContentWrapper .footerInfo img {
+    width: 50px;
+}
+
+.footerBottomContentWrapper {
+    background-color: var(--color-light-green);
+}
+
+.footerBottomContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    height: 90px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footerBottomContent ul {
+    display: flex;
+    font-family: Nunito, sans-serif;
+    color: var(--color-light);
+}
+
+.footerBottomContent ul a,
+.footerBottomContent ul a:visited {
+    color: var(--color-light);
+}
+
+.footerBottomContent div ul li:not(:last-child) a,
+.footerBottomContent div ul li:not(:last-child) button {
+    margin-right: 20px;
+}
+
+.footerBottomAuthors {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    color: var(--color-light);
+    font-family: Nunito, sans-serif;
+    padding-bottom: 20px;
+}
+
+.footerBottomAuthors a,
+.footerBottomAuthors a:visited {
+    color: var(--color-light);
+}
+
+@media screen and (max-width: 1000px) {
+    .footerWrapper h3 {
+        font-size: 50px;
+    }
+
+    .footerContentWrapper {
+        padding-bottom: 15px;
+    }
+
+    .footerContentWrapper .preorderButton {
+        max-width: 500px;
+        width: 100%;
+        margin-bottom: 150px;
+    }
+
+    .footerBottomContent {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        gap: 15px;
+        padding: 15px 0;
+    }
+
+    .footerBottomContent ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footerBottomContent div ul li:not(:last-child) a,
+    .footerBottomContent div ul li:not(:last-child) button {
+        margin-right: 0;
+    }
+
+    .footerBottomAuthors {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footerWrapper h3 {
+        padding-top: 50px;
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .footerContentWrapper .footerInfo img {
+        width: 30px;
+    }
+}

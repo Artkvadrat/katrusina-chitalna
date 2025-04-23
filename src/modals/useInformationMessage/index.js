@@ -1,1 +1,0 @@
-export { useInformationMessage } from "./useInformationMessage";

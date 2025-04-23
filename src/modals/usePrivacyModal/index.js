@@ -1,1 +1,0 @@
-export { usePrivacyModal } from "./usePrivacyModal";
